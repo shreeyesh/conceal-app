@@ -13,9 +13,11 @@
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.2.1",
-    "toastr": "^2.1.4",
-    "wasmsnark": "0.0.10",
+    "react-scripts": "^4.0.3",
     "snarkjs": "^0.1.31",
+    "toastr": "^2.1.4",
+    "vercel": "^23.1.2",
+    "wasmsnark": "0.0.10",
     "web3": "1.2.7"
   },
   "devDependencies": {
