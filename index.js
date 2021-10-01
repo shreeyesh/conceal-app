@@ -281,8 +281,8 @@ async function connectMetamask() {
   }
 
   if (!ethEnabled()) {
-    toastr.warning("Please install Metamask to use miksi");
-    alert("Please install MetaMask to use miksi");
+    toastr.warning("Please install Metamask to use Conceal");
+    alert("Please install MetaMask to use Conceal");
     return;
   } else if (window.ethereum.networkVersion!='5') {
     toastr.warning("Please switch to Göerli");
@@ -295,8 +295,8 @@ async function connectMetamask() {
   console.log("abi", abi);
   miksiContract = new web3.eth.Contract(abi, miksiAddress);
   console.log("miksiContract", miksiContract);
-  toastr.info("Metamask connected. Miksi contract: " + miksiAddress);
-  println("Metamask connected. Miksi contract: ", miksiAddress);
+  toastr.info("Metamask connected. Conceal contract: " + miksiAddress);
+  println("Metamask connected. Conceal contract: ", miksiAddress);
 
   const acc = await web3.eth.getAccounts();
   const addr = acc[0];
