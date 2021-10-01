@@ -296,7 +296,7 @@ async function connectMetamask() {
   miksiContract = new web3.eth.Contract(abi, miksiAddress);
   console.log("miksiContract", miksiContract);
   toastr.info("Metamask connected. Conceal contract: " + miksiAddress);
-  println("Metamask connected. Conceal contract: ", miksiAddress);
+  println("Metamask connected. Conceal contract: ");
 
   const acc = await web3.eth.getAccounts();
   const addr = acc[0];
